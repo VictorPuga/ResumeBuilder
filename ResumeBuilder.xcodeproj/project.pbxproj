@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		32747E712D9EEB5A0092E9CB /* SwiftDotenv in Frameworks */ = {isa = PBXBuildFile; productRef = 32747E702D9EEB5A0092E9CB /* SwiftDotenv */; };
+		32974A542D8DAB3B00EA7DDB /* ResumeBuilderLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 32974A532D8DAB3B00EA7DDB /* ResumeBuilderLibrary */; };
+		32974A762D8E4B4C00EA7DDB /* ResumeBuilderLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 32974A752D8E4B4C00EA7DDB /* ResumeBuilderLibrary */; };
+		32974A792D8E501F00EA7DDB /* HtmlToPdf in Frameworks */ = {isa = PBXBuildFile; productRef = 32974A782D8E501F00EA7DDB /* HtmlToPdf */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		32A942962D8DA74100EE90D5 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -19,10 +26,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		32747E722D9EEBEA0092E9CB /* .env */ = {isa = PBXFileReference; lastKnownFileType = text; path = .env; sourceTree = "<group>"; };
+		32974A512D8DAB1800EA7DDB /* ResumeBuilderLibrary */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ResumeBuilderLibrary; sourceTree = "<group>"; };
+		32974A592D8DAB9100EA7DDB /* ResumeBuilderPreview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResumeBuilderPreview.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		32974A682D8DAC4500EA7DDB /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		32A942982D8DA74100EE90D5 /* ResumeBuilder */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ResumeBuilder; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		32974A5A2D8DAB9100EA7DDB /* ResumeBuilderPreview */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ResumeBuilderPreview;
+			sourceTree = "<group>";
+		};
 		32A9429A2D8DA74100EE90D5 /* ResumeBuilder */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = ResumeBuilder;
@@ -31,20 +47,43 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		32974A562D8DAB9100EA7DDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32974A762D8E4B4C00EA7DDB /* ResumeBuilderLibrary in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		32A942952D8DA74100EE90D5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32747E712D9EEB5A0092E9CB /* SwiftDotenv in Frameworks */,
+				32974A542D8DAB3B00EA7DDB /* ResumeBuilderLibrary in Frameworks */,
+				32974A792D8E501F00EA7DDB /* HtmlToPdf in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32974A522D8DAB3B00EA7DDB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		32A9428F2D8DA74100EE90D5 = {
 			isa = PBXGroup;
 			children = (
+				32974A512D8DAB1800EA7DDB /* ResumeBuilderLibrary */,
 				32A9429A2D8DA74100EE90D5 /* ResumeBuilder */,
+				32974A5A2D8DAB9100EA7DDB /* ResumeBuilderPreview */,
+				32974A522D8DAB3B00EA7DDB /* Frameworks */,
+				32974A682D8DAC4500EA7DDB /* .gitignore */,
+				32747E722D9EEBEA0092E9CB /* .env */,
 				32A942992D8DA74100EE90D5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				32A942982D8DA74100EE90D5 /* ResumeBuilder */,
+				32974A592D8DAB9100EA7DDB /* ResumeBuilderPreview.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +100,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		32974A582D8DAB9100EA7DDB /* ResumeBuilderPreview */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32974A652D8DAB9200EA7DDB /* Build configuration list for PBXNativeTarget "ResumeBuilderPreview" */;
+			buildPhases = (
+				32974A552D8DAB9100EA7DDB /* Sources */,
+				32974A562D8DAB9100EA7DDB /* Frameworks */,
+				32974A572D8DAB9100EA7DDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				32974A5A2D8DAB9100EA7DDB /* ResumeBuilderPreview */,
+			);
+			name = ResumeBuilderPreview;
+			packageProductDependencies = (
+				32974A752D8E4B4C00EA7DDB /* ResumeBuilderLibrary */,
+			);
+			productName = ResumeBuilderPreview;
+			productReference = 32974A592D8DAB9100EA7DDB /* ResumeBuilderPreview.app */;
+			productType = "com.apple.product-type.application";
+		};
 		32A942972D8DA74100EE90D5 /* ResumeBuilder */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 32A9429F2D8DA74100EE90D5 /* Build configuration list for PBXNativeTarget "ResumeBuilder" */;
@@ -77,6 +140,9 @@
 			);
 			name = ResumeBuilder;
 			packageProductDependencies = (
+				32974A532D8DAB3B00EA7DDB /* ResumeBuilderLibrary */,
+				32974A782D8E501F00EA7DDB /* HtmlToPdf */,
+				32747E702D9EEB5A0092E9CB /* SwiftDotenv */,
 			);
 			productName = ResumeBuilder;
 			productReference = 32A942982D8DA74100EE90D5 /* ResumeBuilder */;
@@ -92,6 +158,9 @@
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
+					32974A582D8DAB9100EA7DDB = {
+						CreatedOnToolsVersion = 16.0;
+					};
 					32A942972D8DA74100EE90D5 = {
 						CreatedOnToolsVersion = 16.0;
 					};
@@ -106,17 +175,39 @@
 			);
 			mainGroup = 32A9428F2D8DA74100EE90D5;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				32974A772D8E501F00EA7DDB /* XCRemoteSwiftPackageReference "swift-html-to-pdf" */,
+				32747E6F2D9EEB5A0092E9CB /* XCRemoteSwiftPackageReference "swift-dotenv" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 32A942992D8DA74100EE90D5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				32A942972D8DA74100EE90D5 /* ResumeBuilder */,
+				32974A582D8DAB9100EA7DDB /* ResumeBuilderPreview */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		32974A572D8DAB9100EA7DDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		32974A552D8DAB9100EA7DDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		32A942942D8DA74100EE90D5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -127,6 +218,60 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		32974A662D8DAB9200EA7DDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ResumeBuilderPreview/ResumeBuilderPreview.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ResumeBuilderPreview/Preview Content\"";
+				DEVELOPMENT_TEAM = TZ5YSJH8XE;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.VictorPuga.ResumeBuilderPreview;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		32974A672D8DAB9200EA7DDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ResumeBuilderPreview/ResumeBuilderPreview.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ResumeBuilderPreview/Preview Content\"";
+				DEVELOPMENT_TEAM = TZ5YSJH8XE;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.VictorPuga.ResumeBuilderPreview;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		32A9429D2D8DA74100EE90D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -270,6 +415,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		32974A652D8DAB9200EA7DDB /* Build configuration list for PBXNativeTarget "ResumeBuilderPreview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32974A662D8DAB9200EA7DDB /* Debug */,
+				32974A672D8DAB9200EA7DDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		32A942932D8DA74100EE90D5 /* Build configuration list for PBXProject "ResumeBuilder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -289,6 +443,46 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		32747E6F2D9EEB5A0092E9CB /* XCRemoteSwiftPackageReference "swift-dotenv" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/thebarndog/swift-dotenv.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.0;
+			};
+		};
+		32974A772D8E501F00EA7DDB /* XCRemoteSwiftPackageReference "swift-html-to-pdf" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/coenttb/swift-html-to-pdf.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		32747E702D9EEB5A0092E9CB /* SwiftDotenv */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 32747E6F2D9EEB5A0092E9CB /* XCRemoteSwiftPackageReference "swift-dotenv" */;
+			productName = SwiftDotenv;
+		};
+		32974A532D8DAB3B00EA7DDB /* ResumeBuilderLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ResumeBuilderLibrary;
+		};
+		32974A752D8E4B4C00EA7DDB /* ResumeBuilderLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ResumeBuilderLibrary;
+		};
+		32974A782D8E501F00EA7DDB /* HtmlToPdf */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 32974A772D8E501F00EA7DDB /* XCRemoteSwiftPackageReference "swift-html-to-pdf" */;
+			productName = HtmlToPdf;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 32A942902D8DA74100EE90D5 /* Project object */;
 }

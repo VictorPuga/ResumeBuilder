@@ -1,11 +1,10 @@
 //
-//  main.swift
-//  ResumeBuilder
+//  Constants.swift
+//  ResumeBuilderLibrary
 //
 //  Created by Víctor Manuel Puga Ruiz on 21/03/25.
 //
 
 import Foundation
 
-print("Hello, World!")
-
+let emDash = "—"  // ASCII 8212
