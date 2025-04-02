@@ -8,7 +8,7 @@
 import Foundation
 import HTML
 
-public struct DocumentStructure {
+struct DocumentStructure {
   public let title: String
 
   let experience: [ExperienceContent]

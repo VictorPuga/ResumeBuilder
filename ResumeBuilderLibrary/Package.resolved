@@ -1,5 +1,5 @@
 {
-  "originHash" : "5696ae7d387b0eb4e265c4d91cd32719c1341237fe2f5c7486c52025c1b2a256",
+  "originHash" : "70da850902417037d1af117cf9027740daa9420e69f0470556ec47d504f7095a",
   "pins" : [
     {
       "identity" : "combine-schedulers",
@@ -17,6 +17,15 @@
       "state" : {
         "branch" : "main",
         "revision" : "4d195064eface038ac5d4d4e3b32a063fcef639e"
+      }
+    },
+    {
+      "identity" : "swift-argument-parser",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-argument-parser",
+      "state" : {
+        "revision" : "41982a3656a71c768319979febd796c6fd111d5c",
+        "version" : "1.5.0"
       }
     },
     {
@@ -65,12 +74,30 @@
       }
     },
     {
+      "identity" : "swift-dotenv",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/thebarndog/swift-dotenv.git",
+      "state" : {
+        "revision" : "d13062940a3cdb2b13efa22ecc83b07b21c2e8dc",
+        "version" : "2.1.0"
+      }
+    },
+    {
       "identity" : "swift-html",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/coenttb/swift-html",
       "state" : {
         "branch" : "main",
         "revision" : "be9f6815273daf9203f22dc1a85c6120b2a85ca5"
+      }
+    },
+    {
+      "identity" : "swift-html-to-pdf",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/coenttb/swift-html-to-pdf.git",
+      "state" : {
+        "revision" : "445d920c28b4b62d3208763511794253fd7c9e15",
+        "version" : "0.4.0"
       }
     },
     {

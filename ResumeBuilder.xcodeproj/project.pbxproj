@@ -59,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				326372772D9CEB1B004CDA1F /* ArgumentParser in Frameworks */,
 				32747E712D9EEB5A0092E9CB /* SwiftDotenv in Frameworks */,
 				32974A542D8DAB3B00EA7DDB /* ResumeBuilderLibrary in Frameworks */,
 				32974A792D8E501F00EA7DDB /* HtmlToPdf in Frameworks */,
@@ -142,6 +143,7 @@
 			packageProductDependencies = (
 				32974A532D8DAB3B00EA7DDB /* ResumeBuilderLibrary */,
 				32974A782D8E501F00EA7DDB /* HtmlToPdf */,
+				326372762D9CEB1B004CDA1F /* ArgumentParser */,
 				32747E702D9EEB5A0092E9CB /* SwiftDotenv */,
 			);
 			productName = ResumeBuilder;
@@ -177,6 +179,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				32974A772D8E501F00EA7DDB /* XCRemoteSwiftPackageReference "swift-html-to-pdf" */,
+				326372752D9CEB1B004CDA1F /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
 				32747E6F2D9EEB5A0092E9CB /* XCRemoteSwiftPackageReference "swift-dotenv" */,
 			);
 			preferredProjectObjectVersion = 77;
@@ -445,6 +448,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		326372752D9CEB1B004CDA1F /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
 		32747E6F2D9EEB5A0092E9CB /* XCRemoteSwiftPackageReference "swift-dotenv" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/thebarndog/swift-dotenv.git";
@@ -464,6 +475,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		326372762D9CEB1B004CDA1F /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 326372752D9CEB1B004CDA1F /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
 		32747E702D9EEB5A0092E9CB /* SwiftDotenv */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 32747E6F2D9EEB5A0092E9CB /* XCRemoteSwiftPackageReference "swift-dotenv" */;

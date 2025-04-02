@@ -5,15 +5,31 @@
 //  Created by Víctor Manuel Puga Ruiz on 21/03/25.
 //
 
+import ArgumentParser
 import Foundation
 import HtmlToPdf
 import ResumeBuilderLibrary
 import SwiftDotenv
 
 @main
-struct ResumeBuilder {
-  static func main() async throws {
-    let env = URL(fileURLWithPath: #file)
+struct ResumeBuilder: AsyncParsableCommand {
+  @Option(
+    name: .shortAndLong,
+    parsing: .upToNextOption,
+    help: "File formats to generate"
+  )
+  var formats: [SupportedFileFormat] = [.html, .pdf]
+
+  @Option(
+    name: .shortAndLong,
+    help: ".env file path"
+  )
+  var envPath: String?
+
+  func run() async throws {
+    let env =
+      envPath
+      ?? URL(fileURLWithPath: #file)
       .deletingLastPathComponent()
       .deletingLastPathComponent()
       .appendingPathComponent(".env")
@@ -38,8 +54,6 @@ struct ResumeBuilder {
       appropriateFor: nil,
       create: false
     )
-
-    let formats: [SupportedFileFormat] = [.html, .pdf]
 
     for format in formats {
       switch format {
@@ -73,7 +87,7 @@ struct ResumeBuilder {
     }
   }
 
-  enum SupportedFileFormat: String {
+  enum SupportedFileFormat: String, ExpressibleByArgument {
     case html
     case pdf
   }
