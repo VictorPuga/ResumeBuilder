@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		323C8E812D9F801C00BDAD72 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 326372762D9CEB1B004CDA1F /* ArgumentParser */; };
 		32747E712D9EEB5A0092E9CB /* SwiftDotenv in Frameworks */ = {isa = PBXBuildFile; productRef = 32747E702D9EEB5A0092E9CB /* SwiftDotenv */; };
 		32974A542D8DAB3B00EA7DDB /* ResumeBuilderLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 32974A532D8DAB3B00EA7DDB /* ResumeBuilderLibrary */; };
 		32974A762D8E4B4C00EA7DDB /* ResumeBuilderLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 32974A752D8E4B4C00EA7DDB /* ResumeBuilderLibrary */; };
@@ -59,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				326372772D9CEB1B004CDA1F /* ArgumentParser in Frameworks */,
+				323C8E812D9F801C00BDAD72 /* ArgumentParser in Frameworks */,
 				32747E712D9EEB5A0092E9CB /* SwiftDotenv in Frameworks */,
 				32974A542D8DAB3B00EA7DDB /* ResumeBuilderLibrary in Frameworks */,
 				32974A792D8E501F00EA7DDB /* HtmlToPdf in Frameworks */,
