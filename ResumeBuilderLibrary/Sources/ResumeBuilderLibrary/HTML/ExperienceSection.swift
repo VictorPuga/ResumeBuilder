@@ -27,7 +27,7 @@ struct ExperienceSection: HTMLComponent {
 
         ul {
           li {
-            div {
+            span {
               span {
                 em {
                   content.projectName
@@ -43,13 +43,12 @@ struct ExperienceSection: HTMLComponent {
             li { span { item } }
           }
         }
+        .class("bullet-list")
 
       }
     }
   }
 
   static let customCSS: String = """
-    body section:first-of-type h2 { margin: 0 }
-    h2 + h3 { margin-top: 2pt }
     """
 }

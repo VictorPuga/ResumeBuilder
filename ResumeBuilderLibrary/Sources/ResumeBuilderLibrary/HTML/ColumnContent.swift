@@ -23,6 +23,7 @@ struct ColumnContent: HTMLComponent {
               li { span { item } }
             }
           }
+          .class("bullet-list")
         }
 
       }
@@ -33,11 +34,8 @@ struct ColumnContent: HTMLComponent {
 
   static let customCSS: String = """
     .columnContent {
-      margin-top: 10px;
       display: flex;
       justify-content: space-between;
     }
-
-    ul { margin: 0; padding-left: 17px }
     """
 }

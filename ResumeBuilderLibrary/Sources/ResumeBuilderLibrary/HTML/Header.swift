@@ -17,7 +17,13 @@ struct Header: HTMLComponent {
   }
 
   static let customCSS: String = """
-    header { text-align: center }
-    header span { font-size: 8pt; font-weight: 300; text-transform: uppercase  }
+    header { 
+      // display: none;
+      font-family: 'HelveticaNeue-Light';
+      text-align: center;
+      margin-bottom: 18pt;
+    }
+
+    header span { font-size: 8pt; font-weight: 300; text-transform: uppercase; letter-spacing: 0.05em }
     """
 }

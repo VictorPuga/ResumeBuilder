@@ -13,10 +13,15 @@ struct ProfileSection: HTML {
     section {
       h2 { "Profile" }
       p {
-        "8 years of programming experience. Fast learner and fluent in TypeScript (JavaScript). "
+        "6 years of programming experience. Fast learner and fluent in TypeScript (JavaScript). "
         "Currently studying Computer Science at Tecnológico de Monterrey. "
         "Experience with web, cross-platform mobile applications, native iOS, and serverless backend development."
       }
     }
+    .class("profile")
   }
+
+  static let customCSS: String = """
+    section.profile { margin-bottom: var(--section-margin) }
+    """
 }

@@ -22,13 +22,19 @@ struct Footer: HTMLComponent {
   }
 
   static let customCSS: String = """
+    footer { display: flex; justify-content: center; }
+
     footer ul {
+      width: 100%;
+      max-width: 320pt;
       list-style: none;
       padding: 12px 0 0;
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-between;
       font-size: 8pt;
       font-weight: 500;
     }
+
+    footer span { font-size: 8pt }
     """
 }

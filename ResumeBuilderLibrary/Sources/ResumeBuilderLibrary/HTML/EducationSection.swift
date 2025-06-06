@@ -18,8 +18,17 @@ struct EducationSection: HTMLComponent {
       HTMLForEach(contents) { content in
 
         div {
-          h3 { content.institution }
-          " \(emDash) "
+          h3 {
+            content.institution
+
+            " "
+            span {
+              "\(emDash)"
+            }
+            .attribute("aria-hidden", "true")
+          }
+
+          " "
           span { content.degree }
           " "
           span { content.timePeriod }
@@ -31,13 +40,12 @@ struct EducationSection: HTMLComponent {
   }
 
   static let customCSS: String = """
-    .education div * {
-      margin: 0;
-      display: inline-block;
-    }
+    section.education { margin-bottom: var(--section-margin); }
 
-    .education div span:last-child {
-      justify-self: flex-end;
-    }
+    .education div { line-height: 1; position: relative; }
+
+    .education div * { display: inline-block; }
+
+    .education > div > span:last-child { position: absolute; right: 0; }
     """
 }
