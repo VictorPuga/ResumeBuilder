@@ -42,6 +42,11 @@ struct DocumentRoot: HTMLDocument, StyledHTML {
     ProfileSection()
     ExperienceSection(contents: structure.experience)
     EducationSection(contents: structure.education)
+
+    if let academicExperience = structure.academicExperience {
+      ExperienceSection(sectionTitle: "Academic Experience", contents: academicExperience)
+    }
+
     ColumnContent(content: structure.columns)
     Footer(content: structure.footer)
   }
@@ -63,9 +68,18 @@ struct DocumentRoot: HTMLDocument, StyledHTML {
       * { -webkit-print-color-adjust: exact; }
     }
 
+    @media not print {
+      body {
+        width: 612pt;
+        padding: 72pt;
+        padding-top: 36pt;
+        border: 1px solid #E0E0E0;
+      }
+    }
+
     * { --section-margin: 10pt; line-height: 1.1 }
 
-    h1, h2, h3, p { margin: 0; font-weight: 400 }
+    h1, h2, h3, h4, p { margin: 0; font-weight: 400 }
     h1 { font-size: 20pt }
 
     h2 { 
@@ -75,7 +89,7 @@ struct DocumentRoot: HTMLDocument, StyledHTML {
       text-transform: uppercase;
     }
 
-    h3 { 
+    h3 {
       font-size: 9pt; 
       line-height: 1.2; 
       letter-spacing: 0.05em;
@@ -83,15 +97,22 @@ struct DocumentRoot: HTMLDocument, StyledHTML {
       text-transform: uppercase;
     }
 
+    h4 {
+      font-family: 'HelveticaNeue-Light';
+      font-size: 9pt;
+      letter-spacing: 0.05em;
+      line-height: 1;
+    }
+
     p, span { font-size: 10pt }
     h3 span { font-size: inherit }
     em { font-weight: 700; font-style: normal }
 
+    ul { margin: 0 }
+
     ul.bullet-list {
-      margin: 0;
       padding-left: 5px;
       list-style-type: "•";
-      margin-bottom: var(--section-margin);
     }
 
     ul.bullet-list ::marker { font-size: 10pt }

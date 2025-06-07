@@ -28,7 +28,8 @@ struct Footer: HTMLComponent {
       width: 100%;
       max-width: 320pt;
       list-style: none;
-      padding: 12px 0 0;
+      padding: 0;
+      margin-top: 12px;
       display: flex;
       justify-content: space-between;
       font-size: 8pt;
@@ -36,5 +37,15 @@ struct Footer: HTMLComponent {
     }
 
     footer span { font-size: 8pt }
+
+    @media print {
+      footer {
+        margin-top: 0;
+        position: absolute; 
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+    }
     """
 }

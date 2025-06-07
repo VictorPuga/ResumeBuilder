@@ -36,6 +36,11 @@ struct ColumnContent: HTMLComponent {
     .columnContent {
       display: flex;
       justify-content: space-between;
+      gap: 18pt;
+    }
+
+    .columnContent > section {
+      flex: 1;
     }
     """
 }

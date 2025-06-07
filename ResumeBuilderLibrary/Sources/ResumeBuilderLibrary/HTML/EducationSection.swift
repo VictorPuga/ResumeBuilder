@@ -23,7 +23,7 @@ struct EducationSection: HTMLComponent {
 
             " "
             span {
-              "\(emDash)"
+              "\(enDash)"
             }
             .attribute("aria-hidden", "true")
           }
@@ -40,7 +40,10 @@ struct EducationSection: HTMLComponent {
   }
 
   static let customCSS: String = """
-    section.education { margin-bottom: var(--section-margin); }
+    section.education {
+      max-width: 600px;
+      margin-bottom: var(--section-margin);
+    }
 
     .education div { line-height: 1; position: relative; }
 

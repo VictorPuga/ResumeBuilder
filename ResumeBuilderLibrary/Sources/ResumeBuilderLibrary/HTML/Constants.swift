@@ -7,4 +7,7 @@
 
 import Foundation
 
-let emDash = "—"  // ASCII 8212
+let enDash = "–" // Unicode U+2013
+
+let emDash = "—"  // Unicode U+2014
+
