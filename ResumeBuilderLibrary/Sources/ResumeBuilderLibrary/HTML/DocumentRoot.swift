@@ -54,18 +54,23 @@ struct DocumentRoot: HTMLDocument, StyledHTML {
   static let customCSS: String = """
     @page {
       size: letter;
-      margin: 72pt;
-      // margin-top: 90pt;
-      margin-top: 36pt;
+      margin: 0;
     }
 
     body {
       font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      margin: 0;
+      margin: 72pt;
+      margin-top: 90pt;
     }
 
     @media print {
       * { -webkit-print-color-adjust: exact; }
+      
+      .page-break {
+        page-break-before: always;
+        margin-top: 72pt;
+        padding-bottom: var(--section-margin);
+      }
     }
 
     @media not print {

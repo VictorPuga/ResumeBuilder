@@ -18,12 +18,21 @@ struct Header: HTMLComponent {
 
   static let customCSS: String = """
     header { 
-      // display: none;
       font-family: 'HelveticaNeue-Light';
       text-align: center;
       margin-bottom: 18pt;
     }
 
     header span { font-size: 8pt; font-weight: 300; text-transform: uppercase; letter-spacing: 0.05em }
+
+    @media print {
+      header {
+        position: absolute;
+        top: 36pt;
+        left: 0;
+        right: 0;
+      }
+    }
+
     """
 }

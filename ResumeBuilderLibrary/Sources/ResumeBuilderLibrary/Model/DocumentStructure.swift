@@ -26,6 +26,14 @@ struct ExperienceContent {
   let company: HTMLText
 
   let positions: [ExperiencePosition]
+
+  let pageBreak: Bool
+
+  init(company: HTMLText, positions: [ExperiencePosition], pageBreak: Bool = false) {
+    self.company = company
+    self.positions = positions
+    self.pageBreak = pageBreak
+  }
 }
 
 struct ExperiencePosition {

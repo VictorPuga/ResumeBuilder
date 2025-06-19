@@ -130,7 +130,8 @@ struct ExtendedResume: DocumentStructure {
               .experience("Assisted on backend development (AWS)"),
             ]
           )
-        ]
+        ],
+        pageBreak: true
       ),
     ]
 

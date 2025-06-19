@@ -29,22 +29,20 @@ struct Footer: HTMLComponent {
       max-width: 320pt;
       list-style: none;
       padding: 0;
-      margin-top: 12px;
       display: flex;
       justify-content: space-between;
       font-size: 8pt;
       font-weight: 500;
     }
 
-    footer span { font-size: 8pt }
+    footer span { font-size: 8pt; letter-spacing: 0.05em }
 
     @media print {
       footer {
-        margin-top: 0;
-        position: absolute; 
+        position: fixed;
+        bottom: 58pt;
         left: 0;
         right: 0;
-        bottom: 0;
       }
     }
     """
