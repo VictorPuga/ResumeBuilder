@@ -17,6 +17,8 @@ struct ExtendedResume: DocumentStructure {
 
   let academicExperience: [ExperienceContent]?
 
+  let awards: [AwardsContent]?
+
   let columns: [ListColumnContent]
 
   let footer: FooterContent
@@ -34,7 +36,7 @@ struct ExtendedResume: DocumentStructure {
             items: [
               .project(name: "AutoZone.com", description: "B2C Ecommerce website"),
               .experience("Feature redesign for performance optimization"),
-              .experience("Backup Tech Lead across different teams (???????????????)"),
+              .experience("Backup Tech Lead across different teams"),
               .experience("Core dependency upgrades to latest versions"),
               .experience("Side project: iOS Widget for AutoZone mobile app (SwiftUI, React Native)"),
             ]
@@ -64,7 +66,7 @@ struct ExtendedResume: DocumentStructure {
         ]
       ),
       ExperienceContent(
-        company: "Secretaria de Innovación y Desarrollo",
+        company: "Secretaría de Innovación y Desarrollo",
         positions: [
           ExperiencePosition(
             jobTitle: "Data Science Intern",
@@ -197,6 +199,11 @@ struct ExtendedResume: DocumentStructure {
           )
         ]
       ),
+    ]
+
+    awards = [
+      AwardsContent(title: "CENEVAL Prize to Academic Performance Excellence", date: "June 2024"),
+      AwardsContent(title: "Graduated with Honors in B.S. in Computer Science, top of graduating class", date: "June 2024"),
     ]
 
     columns = [

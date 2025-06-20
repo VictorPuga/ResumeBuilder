@@ -16,6 +16,8 @@ protocol DocumentStructure {
   var education: [EducationContent] { get }
 
   var academicExperience: [ExperienceContent]? { get }
+  
+  var awards: [AwardsContent]? { get }
 
   var columns: [ListColumnContent] { get }
 
@@ -55,6 +57,12 @@ struct EducationContent {
   let degree: HTMLText
 
   let timePeriod: HTMLText
+}
+
+struct AwardsContent {
+  let title: HTMLText
+
+  let date: HTMLText
 }
 
 struct ListColumnContent {

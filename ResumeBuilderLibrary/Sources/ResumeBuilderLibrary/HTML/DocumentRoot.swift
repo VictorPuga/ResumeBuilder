@@ -30,6 +30,7 @@ struct DocumentRoot: HTMLDocument, StyledHTML {
         \(ProfileSection.customCSS)
         \(ExperienceSection.customCSS)
         \(EducationSection.customCSS)
+        \(AwardsSection.customCSS)
         \(ColumnContent.customCSS)
         \(Footer.customCSS)
       </style>
@@ -45,6 +46,10 @@ struct DocumentRoot: HTMLDocument, StyledHTML {
 
     if let academicExperience = structure.academicExperience {
       ExperienceSection(sectionTitle: "Academic Experience", contents: academicExperience)
+    }
+
+    if let awards = structure.awards {
+      AwardsSection(contents: awards)
     }
 
     ColumnContent(content: structure.columns)

@@ -16,6 +16,8 @@ struct Resume: DocumentStructure {
   let education: [EducationContent]
 
   let academicExperience: [ExperienceContent]?
+  
+  let awards: [AwardsContent]?
 
   let columns: [ListColumnContent]
 
@@ -107,6 +109,8 @@ struct Resume: DocumentStructure {
     ]
 
     academicExperience = nil
+    
+    awards = nil
 
     columns = [
       ListColumnContent(
