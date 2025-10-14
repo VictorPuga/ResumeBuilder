@@ -74,8 +74,8 @@ struct ResumeBuilder: AsyncParsableCommand {
           try await htmlString.print(
             to: pdfURL,
             configuration: PDFConfiguration(
-              margins: EdgeInsets(top: 36, left: 72, bottom: 72, right: 72),
-              paperSize: CGSize(width: 612, height: 792)
+              paperSize: CGSize(width: 612, height: 792),
+              margins: EdgeInsets(top: 36, left: 72, bottom: 72, right: 72)
             )
           )
           print("PDF file written to \(pdfURL)")

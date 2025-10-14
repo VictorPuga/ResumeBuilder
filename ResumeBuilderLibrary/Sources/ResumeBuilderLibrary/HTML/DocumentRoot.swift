@@ -9,7 +9,7 @@ import Foundation
 import HTML
 import PointFreeHTML
 
-struct DocumentRoot: HTMLDocument, StyledHTML {
+struct DocumentRoot: HTMLDocumentProtocol, StyledHTML {
   let structure: DocumentStructure
 
   init(_ structure: DocumentStructure) {
@@ -20,7 +20,9 @@ struct DocumentRoot: HTMLDocument, StyledHTML {
     meta()
       .attribute("charset", "utf-8")
 
-    PointFreeHTML.title { structure.title }
+    Title {
+      structure.title
+    }
 
     HTMLRaw(
       """

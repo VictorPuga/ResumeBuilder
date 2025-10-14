@@ -70,7 +70,7 @@ struct ExperienceSection: HTMLComponent {
           }
 
         }
-        .class("experience-job" + (content.pageBreak ? " page-break" : ""))
+        .class(Class(stringLiteral: "experience-job" + (content.pageBreak ? " page-break" : "")))
 
       }
     }
