@@ -13,7 +13,7 @@ struct ProfileSection: HTML {
     section {
       h2 { "Profile" }
       p {
-        "9 years of programming experience. Fast learner and fluent in TypeScript (JavaScript). "
+        "9 years of programming experience. Fast learner and fluent in TypeScript (JavaScript). " // maybe add more languages (Swift)
         "B.S. in Computer Science, Tecnológico de Monterrey, graduated with honors. "
         "Experience with web, cross-platform mobile applications, native iOS, and serverless backend development."
       }

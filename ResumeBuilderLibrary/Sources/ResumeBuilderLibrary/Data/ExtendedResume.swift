@@ -24,7 +24,7 @@ struct ExtendedResume: DocumentStructure {
   let footer: FooterContent
 
   init(_ options: ResumeOptions) {
-    title = "Victor Puga - CV Extendido"
+    title = "Victor Puga - Extended CV"
 
     experience = [
       ExperienceContent(
@@ -152,58 +152,60 @@ struct ExtendedResume: DocumentStructure {
 
     academicExperience = [
       ExperienceContent(
-        company: "Project 1",
+        company: "Tecnológico de Monterrey",
         positions: [
           ExperiencePosition(
             jobTitle: "Developer, Researcher",
-            timePeriod: "",
+            timePeriod: "February 2024 - June 2024",
             items: [
-              .experience("Sponsor: Cursafy")
+              .project(name: "Recommendation engine", description: "ML-powered recommendation system for hiring teachers"),
+              .experience("Sponsored by Cursafy"),
+              .experience("Classified teacher profiles with unsupervised learning"),
+              .experience("Trained recommendation model"),
             ]
-          )
-        ]
-      ),
-      ExperienceContent(
-        company: "Project 2",
-        positions: [
+          ),
           ExperiencePosition(
             jobTitle: "Team Lead, Developer",
-            timePeriod: "",
+            timePeriod: "February 2023 - June 2023",
             items: [
-              .experience("Sponsor: AutoZone")
+              .project(name: "Performance Metrics Threshold Calculator", description: "Web service monitoring and alerting system"),
+              .experience("Sponsored by AutoZone"),
+              .experience("Managed project planning and development"),
+              .experience("Retrieved data from service performance logs (Dynatrace)"),
+              .experience("Automated metric calculation process (Java)"),
+              .experience("Developed web app (React.js)"),
             ]
-          )
-        ]
-      ),
-      ExperienceContent(
-        company: "Project 3",
-        positions: [
+          ),
           ExperiencePosition(
             jobTitle: "Developer",
-            timePeriod: "",
+            timePeriod: "August 2022 - December 2022",
             items: [
-              .experience("Sponsor: Museo Semilla")
+              .project(name: "Museum Manager", description: "Museum guide management system and tourist web application"),
+              .experience("Sponsored by Museo Semilla"),
+              .experience("Developed iPad app for museum management (Swift, UIKit)"),
+              .experience("Developed user-facing web app (React.js, Next.js)"),
+              .experience("Assisted with project planning"),
             ]
-          )
-        ]
-      ),
-      ExperienceContent(
-        company: "Project 4",
-        positions: [
+          ),
           ExperiencePosition(
             jobTitle: "Team Lead, Developer",
-            timePeriod: "",
+            timePeriod: "February 2022 - June 2022",
             items: [
-              .experience("Sponsor: Smart Cities")
+              .project(name: "Smart Parking", description: "Parking simulation system"),
+              .experience("Sponsored by Smart Cities"),
+              .experience("Developed 3D simulation (Unity)"),
+              .experience("Designed optimized parking algorithm"),
+              .experience("Developed companion web app (React.js, Next.js)"),
+              .experience("Handled integration between different teams' projects"),
             ]
-          )
+          ),
         ]
-      ),
+      )
     ]
 
     awards = [
       AwardsContent(title: "CENEVAL Prize to Academic Performance Excellence", date: "June 2024"),
-      AwardsContent(title: "Graduated with Honors in B.S. in Computer Science, top of graduating class", date: "June 2024"),
+      AwardsContent(title: "Graduated with Honors in B.S. in Computer Science, ranked 1st in graduating class", date: "June 2024"),
     ]
 
     columns = [
