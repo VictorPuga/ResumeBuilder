@@ -34,7 +34,7 @@ struct ExtendedResume: DocumentStructure {
             jobTitle: "Systems Engineer",
             timePeriod: "June 2024 - Present",
             items: [
-              .project(name: "AutoZone.com", description: "B2C Ecommerce website"),
+              .project(name: "AutoZone.com", description: "B2C Ecommerce website"),  // add impact (people)
               .experience("Feature redesign for performance optimization"),
               .experience("Backup Tech Lead across different teams"),
               .experience("Core dependency upgrades to latest versions"),
@@ -242,7 +242,7 @@ struct ExtendedResume: DocumentStructure {
       // ListColumnContent(
       //   title: "Certifications",
       //   items: [
-      //     "Google Cloud Associate Cloud Engineer"
+      //     "Associate Cloud Engineer (GCP)"
       //   ]
       // ),
     ]

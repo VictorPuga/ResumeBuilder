@@ -8,13 +8,37 @@
 
 /* Begin PBXBuildFile section */
 		323C8E812D9F801C00BDAD72 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 326372762D9CEB1B004CDA1F /* ArgumentParser */; };
+		32696F152FF1C30900571824 /* ResumeBuilderLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32696F0F2FF1C30900571824 /* ResumeBuilderLibrary.framework */; };
+		32696F162FF1C30900571824 /* ResumeBuilderLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 32696F0F2FF1C30900571824 /* ResumeBuilderLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		32696F512FF1CD6500571824 /* HTML in Frameworks */ = {isa = PBXBuildFile; productRef = 32696F502FF1CD6500571824 /* HTML */; };
 		32747E712D9EEB5A0092E9CB /* SwiftDotenv in Frameworks */ = {isa = PBXBuildFile; productRef = 32747E702D9EEB5A0092E9CB /* SwiftDotenv */; };
 		32974A542D8DAB3B00EA7DDB /* ResumeBuilderLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 32974A532D8DAB3B00EA7DDB /* ResumeBuilderLibrary */; };
 		32974A762D8E4B4C00EA7DDB /* ResumeBuilderLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 32974A752D8E4B4C00EA7DDB /* ResumeBuilderLibrary */; };
 		32974A792D8E501F00EA7DDB /* HtmlToPdf in Frameworks */ = {isa = PBXBuildFile; productRef = 32974A782D8E501F00EA7DDB /* HtmlToPdf */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		32696F132FF1C30900571824 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32A942902D8DA74100EE90D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32696F0E2FF1C30900571824;
+			remoteInfo = ResumeBuilderLibrary;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
+		32696F1A2FF1C30900571824 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				32696F162FF1C30900571824 /* ResumeBuilderLibrary.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		32A942962D8DA74100EE90D5 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -27,14 +51,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		32696F0F2FF1C30900571824 /* ResumeBuilderLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ResumeBuilderLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		32747E722D9EEBEA0092E9CB /* .env */ = {isa = PBXFileReference; lastKnownFileType = text; path = .env; sourceTree = "<group>"; };
-		32974A512D8DAB1800EA7DDB /* ResumeBuilderLibrary */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ResumeBuilderLibrary; sourceTree = "<group>"; };
 		32974A592D8DAB9100EA7DDB /* ResumeBuilderPreview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResumeBuilderPreview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32974A682D8DAC4500EA7DDB /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		32A942982D8DA74100EE90D5 /* ResumeBuilder */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ResumeBuilder; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		32696F102FF1C30900571824 /* ResumeBuilderLibrary */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ResumeBuilderLibrary;
+			sourceTree = "<group>";
+		};
 		32974A5A2D8DAB9100EA7DDB /* ResumeBuilderPreview */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = ResumeBuilderPreview;
@@ -48,11 +77,20 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		32696F0C2FF1C30900571824 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32696F512FF1CD6500571824 /* HTML in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		32974A562D8DAB9100EA7DDB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				32974A762D8E4B4C00EA7DDB /* ResumeBuilderLibrary in Frameworks */,
+				32696F152FF1C30900571824 /* ResumeBuilderLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +118,7 @@
 		32A9428F2D8DA74100EE90D5 = {
 			isa = PBXGroup;
 			children = (
-				32974A512D8DAB1800EA7DDB /* ResumeBuilderLibrary */,
+				32696F102FF1C30900571824 /* ResumeBuilderLibrary */,
 				32A9429A2D8DA74100EE90D5 /* ResumeBuilder */,
 				32974A5A2D8DAB9100EA7DDB /* ResumeBuilderPreview */,
 				32974A522D8DAB3B00EA7DDB /* Frameworks */,
@@ -95,13 +133,48 @@
 			children = (
 				32A942982D8DA74100EE90D5 /* ResumeBuilder */,
 				32974A592D8DAB9100EA7DDB /* ResumeBuilderPreview.app */,
+				32696F0F2FF1C30900571824 /* ResumeBuilderLibrary.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		32696F0A2FF1C30900571824 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		32696F0E2FF1C30900571824 /* ResumeBuilderLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32696F172FF1C30900571824 /* Build configuration list for PBXNativeTarget "ResumeBuilderLibrary" */;
+			buildPhases = (
+				32696F0A2FF1C30900571824 /* Headers */,
+				32696F0B2FF1C30900571824 /* Sources */,
+				32696F0C2FF1C30900571824 /* Frameworks */,
+				32696F0D2FF1C30900571824 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				32696F102FF1C30900571824 /* ResumeBuilderLibrary */,
+			);
+			name = ResumeBuilderLibrary;
+			packageProductDependencies = (
+				32696F502FF1CD6500571824 /* HTML */,
+			);
+			productName = ResumeBuilderLibrary;
+			productReference = 32696F0F2FF1C30900571824 /* ResumeBuilderLibrary.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		32974A582D8DAB9100EA7DDB /* ResumeBuilderPreview */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 32974A652D8DAB9200EA7DDB /* Build configuration list for PBXNativeTarget "ResumeBuilderPreview" */;
@@ -109,10 +182,12 @@
 				32974A552D8DAB9100EA7DDB /* Sources */,
 				32974A562D8DAB9100EA7DDB /* Frameworks */,
 				32974A572D8DAB9100EA7DDB /* Resources */,
+				32696F1A2FF1C30900571824 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				32696F142FF1C30900571824 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				32974A5A2D8DAB9100EA7DDB /* ResumeBuilderPreview */,
@@ -158,9 +233,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1600;
+				LastSwiftUpdateCheck = 2650;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
+					32696F0E2FF1C30900571824 = {
+						CreatedOnToolsVersion = 26.5;
+					};
 					32974A582D8DAB9100EA7DDB = {
 						CreatedOnToolsVersion = 16.0;
 					};
@@ -182,6 +260,7 @@
 				32974A772D8E501F00EA7DDB /* XCRemoteSwiftPackageReference "swift-html-to-pdf" */,
 				326372752D9CEB1B004CDA1F /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
 				32747E6F2D9EEB5A0092E9CB /* XCRemoteSwiftPackageReference "swift-dotenv" */,
+				32696F4F2FF1CD6500571824 /* XCRemoteSwiftPackageReference "swift-html" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 32A942992D8DA74100EE90D5 /* Products */;
@@ -190,11 +269,19 @@
 			targets = (
 				32A942972D8DA74100EE90D5 /* ResumeBuilder */,
 				32974A582D8DAB9100EA7DDB /* ResumeBuilderPreview */,
+				32696F0E2FF1C30900571824 /* ResumeBuilderLibrary */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		32696F0D2FF1C30900571824 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		32974A572D8DAB9100EA7DDB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -205,6 +292,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		32696F0B2FF1C30900571824 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		32974A552D8DAB9100EA7DDB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -221,7 +315,93 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		32696F142FF1C30900571824 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32696F0E2FF1C30900571824 /* ResumeBuilderLibrary */;
+			targetProxy = 32696F132FF1C30900571824 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		32696F182FF1C30900571824 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TZ5YSJH8XE;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VictorPuga.ResumeBuilderLibrary;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		32696F192FF1C30900571824 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TZ5YSJH8XE;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VictorPuga.ResumeBuilderLibrary;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		32974A662D8DAB9200EA7DDB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -241,6 +421,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.VictorPuga.ResumeBuilderPreview;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -268,6 +449,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.VictorPuga.ResumeBuilderPreview;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -400,6 +582,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TZ5YSJH8XE;
 				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -411,6 +594,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TZ5YSJH8XE;
 				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -419,6 +603,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		32696F172FF1C30900571824 /* Build configuration list for PBXNativeTarget "ResumeBuilderLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32696F182FF1C30900571824 /* Debug */,
+				32696F192FF1C30900571824 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		32974A652D8DAB9200EA7DDB /* Build configuration list for PBXNativeTarget "ResumeBuilderPreview" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -457,6 +650,14 @@
 				minimumVersion = 1.5.0;
 			};
 		};
+		32696F4F2FF1CD6500571824 /* XCRemoteSwiftPackageReference "swift-html" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/coenttb/swift-html";
+			requirement = {
+				kind = revision;
+				revision = ec976c56ec36517dd81dee9b4cc2773f72499755;
+			};
+		};
 		32747E6F2D9EEB5A0092E9CB /* XCRemoteSwiftPackageReference "swift-dotenv" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/thebarndog/swift-dotenv.git";
@@ -480,6 +681,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 326372752D9CEB1B004CDA1F /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
 			productName = ArgumentParser;
+		};
+		32696F502FF1CD6500571824 /* HTML */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 32696F4F2FF1CD6500571824 /* XCRemoteSwiftPackageReference "swift-html" */;
+			productName = HTML;
 		};
 		32747E702D9EEB5A0092E9CB /* SwiftDotenv */ = {
 			isa = XCSwiftPackageProductDependency;
