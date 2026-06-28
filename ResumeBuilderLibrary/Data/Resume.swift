@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import PointFreeHTML
 
 struct Resume: DocumentStructure {
 

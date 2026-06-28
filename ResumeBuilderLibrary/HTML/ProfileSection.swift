@@ -7,6 +7,7 @@
 
 import Foundation
 import HTML
+import HTMLAttributesPointFreeHTML
 
 struct ProfileSection: HTML {
   var body: some HTML {

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import PointFreeHTML
 
 public struct PDFBuilder {
   let structure: DocumentStructure
