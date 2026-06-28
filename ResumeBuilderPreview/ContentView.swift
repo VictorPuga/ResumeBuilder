@@ -11,7 +11,7 @@ import SwiftUI
 @testable import ResumeBuilderLibrary
 
 #Preview {
-  HTMLPreview {
+  HTMLDocument {
     ProfileSection()
   }
 }

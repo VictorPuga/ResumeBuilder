@@ -7,21 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		323B2CB52FF1E279000F9C82 /* ResumeBuilderLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32696F0F2FF1C30900571824 /* ResumeBuilderLibrary.framework */; };
+		323B2CB62FF1E279000F9C82 /* ResumeBuilderLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 32696F0F2FF1C30900571824 /* ResumeBuilderLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		323C8E812D9F801C00BDAD72 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 326372762D9CEB1B004CDA1F /* ArgumentParser */; };
-		32696F152FF1C30900571824 /* ResumeBuilderLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32696F0F2FF1C30900571824 /* ResumeBuilderLibrary.framework */; };
-		32696F162FF1C30900571824 /* ResumeBuilderLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 32696F0F2FF1C30900571824 /* ResumeBuilderLibrary.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		32696F9D2FF1D9BF00571824 /* HTML in Frameworks */ = {isa = PBXBuildFile; productRef = 32696F9C2FF1D9BF00571824 /* HTML */; };
 		32696F9F2FF1D9BF00571824 /* PointFreeHTML in Frameworks */ = {isa = PBXBuildFile; productRef = 32696F9E2FF1D9BF00571824 /* PointFreeHTML */; };
 		32696FA02FF1DA5200571824 /* ResumeBuilderLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32696F0F2FF1C30900571824 /* ResumeBuilderLibrary.framework */; };
 		32696FA12FF1DA5200571824 /* ResumeBuilderLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 32696F0F2FF1C30900571824 /* ResumeBuilderLibrary.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		32696FA72FF1DBAA00571824 /* ConcurrencyExtras in Frameworks */ = {isa = PBXBuildFile; productRef = 32696FA62FF1DBAA00571824 /* ConcurrencyExtras */; };
 		32747E712D9EEB5A0092E9CB /* SwiftDotenv in Frameworks */ = {isa = PBXBuildFile; productRef = 32747E702D9EEB5A0092E9CB /* SwiftDotenv */; };
-		32974A762D8E4B4C00EA7DDB /* ResumeBuilderLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 32974A752D8E4B4C00EA7DDB /* ResumeBuilderLibrary */; };
 		32974A792D8E501F00EA7DDB /* HtmlToPdf in Frameworks */ = {isa = PBXBuildFile; productRef = 32974A782D8E501F00EA7DDB /* HtmlToPdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		32696F132FF1C30900571824 /* PBXContainerItemProxy */ = {
+		323B2CB72FF1E279000F9C82 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 32A942902D8DA74100EE90D5 /* Project object */;
 			proxyType = 1;
@@ -38,13 +37,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		32696F1A2FF1C30900571824 /* Embed Frameworks */ = {
+		323B2CB92FF1E279000F9C82 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				32696F162FF1C30900571824 /* ResumeBuilderLibrary.framework in Embed Frameworks */,
+				323B2CB62FF1E279000F9C82 /* ResumeBuilderLibrary.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -112,8 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32974A762D8E4B4C00EA7DDB /* ResumeBuilderLibrary in Frameworks */,
-				32696F152FF1C30900571824 /* ResumeBuilderLibrary.framework in Frameworks */,
+				323B2CB52FF1E279000F9C82 /* ResumeBuilderLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,19 +205,18 @@
 				32974A552D8DAB9100EA7DDB /* Sources */,
 				32974A562D8DAB9100EA7DDB /* Frameworks */,
 				32974A572D8DAB9100EA7DDB /* Resources */,
-				32696F1A2FF1C30900571824 /* Embed Frameworks */,
+				323B2CB92FF1E279000F9C82 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				32696F142FF1C30900571824 /* PBXTargetDependency */,
+				323B2CB82FF1E279000F9C82 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				32974A5A2D8DAB9100EA7DDB /* ResumeBuilderPreview */,
 			);
 			name = ResumeBuilderPreview;
 			packageProductDependencies = (
-				32974A752D8E4B4C00EA7DDB /* ResumeBuilderLibrary */,
 			);
 			productName = ResumeBuilderPreview;
 			productReference = 32974A592D8DAB9100EA7DDB /* ResumeBuilderPreview.app */;
@@ -344,10 +341,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		32696F142FF1C30900571824 /* PBXTargetDependency */ = {
+		323B2CB82FF1E279000F9C82 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 32696F0E2FF1C30900571824 /* ResumeBuilderLibrary */;
-			targetProxy = 32696F132FF1C30900571824 /* PBXContainerItemProxy */;
+			targetProxy = 323B2CB72FF1E279000F9C82 /* PBXContainerItemProxy */;
 		};
 		32696FA32FF1DA5200571824 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -448,8 +445,19 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ResumeBuilderPreview/Preview Content\"";
 				DEVELOPMENT_TEAM = TZ5YSJH8XE;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -476,8 +484,19 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ResumeBuilderPreview/Preview Content\"";
 				DEVELOPMENT_TEAM = TZ5YSJH8XE;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -778,10 +797,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 32747E6F2D9EEB5A0092E9CB /* XCRemoteSwiftPackageReference "swift-dotenv" */;
 			productName = SwiftDotenv;
-		};
-		32974A752D8E4B4C00EA7DDB /* ResumeBuilderLibrary */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = ResumeBuilderLibrary;
 		};
 		32974A782D8E501F00EA7DDB /* HtmlToPdf */ = {
 			isa = XCSwiftPackageProductDependency;
