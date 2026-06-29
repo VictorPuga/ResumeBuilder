@@ -11,10 +11,8 @@
 		323B2CB62FF1E279000F9C82 /* ResumeBuilderLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 32696F0F2FF1C30900571824 /* ResumeBuilderLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		323C8E812D9F801C00BDAD72 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 326372762D9CEB1B004CDA1F /* ArgumentParser */; };
 		32696F9D2FF1D9BF00571824 /* HTML in Frameworks */ = {isa = PBXBuildFile; productRef = 32696F9C2FF1D9BF00571824 /* HTML */; };
-		32696F9F2FF1D9BF00571824 /* PointFreeHTML in Frameworks */ = {isa = PBXBuildFile; productRef = 32696F9E2FF1D9BF00571824 /* PointFreeHTML */; };
 		32696FA02FF1DA5200571824 /* ResumeBuilderLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32696F0F2FF1C30900571824 /* ResumeBuilderLibrary.framework */; };
 		32696FA12FF1DA5200571824 /* ResumeBuilderLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 32696F0F2FF1C30900571824 /* ResumeBuilderLibrary.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		32696FA72FF1DBAA00571824 /* ConcurrencyExtras in Frameworks */ = {isa = PBXBuildFile; productRef = 32696FA62FF1DBAA00571824 /* ConcurrencyExtras */; };
 		32747E712D9EEB5A0092E9CB /* SwiftDotenv in Frameworks */ = {isa = PBXBuildFile; productRef = 32747E702D9EEB5A0092E9CB /* SwiftDotenv */; };
 		32974A792D8E501F00EA7DDB /* HtmlToPdf in Frameworks */ = {isa = PBXBuildFile; productRef = 32974A782D8E501F00EA7DDB /* HtmlToPdf */; };
 /* End PBXBuildFile section */
@@ -101,8 +99,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32696F9F2FF1D9BF00571824 /* PointFreeHTML in Frameworks */,
-				32696FA72FF1DBAA00571824 /* ConcurrencyExtras in Frameworks */,
 				32696F9D2FF1D9BF00571824 /* HTML in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -191,8 +187,6 @@
 			name = ResumeBuilderLibrary;
 			packageProductDependencies = (
 				32696F9C2FF1D9BF00571824 /* HTML */,
-				32696F9E2FF1D9BF00571824 /* PointFreeHTML */,
-				32696FA62FF1DBAA00571824 /* ConcurrencyExtras */,
 			);
 			productName = ResumeBuilderLibrary;
 			productReference = 32696F0F2FF1C30900571824 /* ResumeBuilderLibrary.framework */;
@@ -284,8 +278,7 @@
 				326372752D9CEB1B004CDA1F /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
 				32747E6F2D9EEB5A0092E9CB /* XCRemoteSwiftPackageReference "swift-dotenv" */,
 				32696F622FF1CFE700571824 /* XCRemoteSwiftPackageReference "swift-html" */,
-				32696F992FF1D96300571824 /* XCRemoteSwiftPackageReference "pointfree-html" */,
-				32696FA52FF1DBAA00571824 /* XCRemoteSwiftPackageReference "swift-concurrency-extras" */,
+				323B2CE72FF20BEB000F9C82 /* XCRemoteSwiftPackageReference "swift-svg" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 32A942992D8DA74100EE90D5 /* Products */;
@@ -722,6 +715,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		323B2CE72FF20BEB000F9C82 /* XCRemoteSwiftPackageReference "swift-svg" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/coenttb/swift-svg";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
 		326372752D9CEB1B004CDA1F /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apple/swift-argument-parser";
@@ -735,24 +736,10 @@
 			repositoryURL = "https://github.com/coenttb/swift-html";
 			requirement = {
 				kind = upToNextMinorVersion;
-				minimumVersion = 0.1.0;
+				minimumVersion = 0.11.0;
 			};
-		};
-		32696F992FF1D96300571824 /* XCRemoteSwiftPackageReference "pointfree-html" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/coenttb/pointfree-html";
-			requirement = {
-				kind = exactVersion;
-				version = 2.0.0;
-			};
-		};
-		32696FA52FF1DBAA00571824 /* XCRemoteSwiftPackageReference "swift-concurrency-extras" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/pointfreeco/swift-concurrency-extras";
-			requirement = {
-				kind = exactVersion;
-				version = 1.3.2;
-			};
+			traits = (
+			);
 		};
 		32747E6F2D9EEB5A0092E9CB /* XCRemoteSwiftPackageReference "swift-dotenv" */ = {
 			isa = XCRemoteSwiftPackageReference;
@@ -782,16 +769,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 32696F622FF1CFE700571824 /* XCRemoteSwiftPackageReference "swift-html" */;
 			productName = HTML;
-		};
-		32696F9E2FF1D9BF00571824 /* PointFreeHTML */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 32696F992FF1D96300571824 /* XCRemoteSwiftPackageReference "pointfree-html" */;
-			productName = PointFreeHTML;
-		};
-		32696FA62FF1DBAA00571824 /* ConcurrencyExtras */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 32696FA52FF1DBAA00571824 /* XCRemoteSwiftPackageReference "swift-concurrency-extras" */;
-			productName = ConcurrencyExtras;
 		};
 		32747E702D9EEB5A0092E9CB /* SwiftDotenv */ = {
 			isa = XCSwiftPackageProductDependency;
