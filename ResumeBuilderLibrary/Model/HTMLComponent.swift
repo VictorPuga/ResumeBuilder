@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import HTML
+internal import HTML
 
 protocol StyledHTML {
   static var customCSS: String { get }

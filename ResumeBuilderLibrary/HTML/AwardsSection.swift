@@ -6,8 +6,8 @@
 //
 
 import Foundation
-import HTML
-import HTMLAttributesPointFreeHTML
+internal import HTML
+internal import HTMLAttributesPointFreeHTML
 
 struct AwardsSection: HTML {
   let contents: [AwardsContent]

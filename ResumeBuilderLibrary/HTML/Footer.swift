@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import HTML
+internal import HTML
 
 struct Footer: HTMLComponent {
   let content: FooterContent

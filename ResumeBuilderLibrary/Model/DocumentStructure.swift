@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import HTML
+internal import HTML
 
 protocol DocumentStructure {
   var title: String { get }

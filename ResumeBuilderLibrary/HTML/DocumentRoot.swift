@@ -6,8 +6,8 @@
 //
 
 import Foundation
-import HTML
-import PointFreeHTML
+internal import HTML
+internal import PointFreeHTML
 
 struct DocumentRoot: HTMLDocumentProtocol, StyledHTML {
   let structure: DocumentStructure

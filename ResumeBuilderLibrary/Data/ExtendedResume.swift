@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import PointFreeHTML
+internal import PointFreeHTML
 
 struct ExtendedResume: DocumentStructure {
 

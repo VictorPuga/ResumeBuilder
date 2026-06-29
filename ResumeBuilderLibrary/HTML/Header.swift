@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import HTML
+internal import HTML
 
 struct Header: HTMLComponent {
   var body: some HTML {
