@@ -8,6 +8,7 @@
 import ArgumentParser
 import Foundation
 import HtmlToPdf
+import ResumeBuilderHTML
 import ResumeBuilderLibrary
 import SwiftDotenv
 

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import ResumeBuilderLibrary
 internal import HTML
 
 struct Footer: HTMLComponent {

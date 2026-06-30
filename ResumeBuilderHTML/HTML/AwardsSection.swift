@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import ResumeBuilderLibrary
 internal import HTML
 internal import HTMLAttributesPointFreeHTML
 

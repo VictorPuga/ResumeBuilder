@@ -8,9 +8,9 @@
 import Foundation
 
 public struct ResumeOptions {
-  let location: String
-  let email: String
-  let phone: String
+  public let location: String
+  public let email: String
+  public let phone: String
 
   public init(location: String, email: String, phone: String) {
     self.location = location

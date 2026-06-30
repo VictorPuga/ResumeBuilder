@@ -6,9 +6,8 @@
 //
 
 import Foundation
-internal import HTML
 
-protocol DocumentStructure {
+public protocol DocumentStructure {
   var title: String { get }
 
   var experience: [ExperienceContent] { get }
@@ -24,53 +23,53 @@ protocol DocumentStructure {
   var footer: FooterContent { get }
 }
 
-struct ExperienceContent {
-  let company: HTMLText
+public struct ExperienceContent {
+  public let company: String
 
-  let positions: [ExperiencePosition]
+  public let positions: [ExperiencePosition]
 
-  let pageBreak: Bool
+  public let pageBreak: Bool
 
-  init(company: HTMLText, positions: [ExperiencePosition], pageBreak: Bool = false) {
+  public init(company: String, positions: [ExperiencePosition], pageBreak: Bool = false) {
     self.company = company
     self.positions = positions
     self.pageBreak = pageBreak
   }
 }
 
-struct ExperiencePosition {
-  let jobTitle: HTMLText
+public struct ExperiencePosition {
+  public let jobTitle: String
 
-  let timePeriod: HTMLText
+  public let timePeriod: String
 
-  let items: [ExperienceItem]
+  public let items: [ExperienceItem]
 }
 
-enum ExperienceItem {
-  case project(name: HTMLText, description: HTMLText)
-  case experience(HTMLText)
+public enum ExperienceItem {
+  case project(name: String, description: String)
+  case experience(String)
 }
 
-struct EducationContent {
-  let institution: HTMLText
+public struct EducationContent {
+  public let institution: String
 
-  let degree: HTMLText
+  public let degree: String
 
-  let timePeriod: HTMLText
+  public let timePeriod: String
 }
 
-struct AwardsContent {
-  let title: HTMLText
+public struct AwardsContent {
+  public let title: String
 
-  let date: HTMLText
+  public let date: String
 }
 
-struct ListColumnContent {
-  let title: HTMLText
+public struct ListColumnContent {
+  public let title: String
 
-  let items: [HTMLText]
+  public let items: [String]
 }
 
-struct FooterContent {
-  let options: ResumeOptions
+public struct FooterContent {
+  public let options: ResumeOptions
 }

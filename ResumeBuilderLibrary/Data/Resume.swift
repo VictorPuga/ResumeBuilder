@@ -6,25 +6,24 @@
 //
 
 import Foundation
-internal import PointFreeHTML
 
-struct Resume: DocumentStructure {
+public struct Resume: DocumentStructure {
 
-  let title: String
+  public let title: String
 
-  let experience: [ExperienceContent]
+  public let experience: [ExperienceContent]
 
-  let education: [EducationContent]
+  public let education: [EducationContent]
 
-  let academicExperience: [ExperienceContent]?
+  public let academicExperience: [ExperienceContent]?
   
-  let awards: [AwardsContent]?
+  public let awards: [AwardsContent]?
 
-  let columns: [ListColumnContent]
+  public let columns: [ListColumnContent]
 
-  let footer: FooterContent
+  public let footer: FooterContent
 
-  init(_ options: ResumeOptions) {
+  public init(_ options: ResumeOptions) {
     title = "Victor Puga - CV"
 
     experience = [
