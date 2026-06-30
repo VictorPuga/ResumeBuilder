@@ -7,6 +7,11 @@
 
 import Foundation
 
+/// A detailed, multi-page résumé.
+///
+/// `ExtendedResume` includes all professional experience along with academic
+/// projects and awards.
+/// Use ``Resume`` when a concise, single-page version is preferred.
 public struct ExtendedResume: DocumentStructure {
 
   public let title: String
@@ -15,14 +20,18 @@ public struct ExtendedResume: DocumentStructure {
 
   public let education: [EducationContent]
 
+  /// University and research project experience, separate from professional history.
   public let academicExperience: [ExperienceContent]?
 
+  /// Honours and distinctions earned throughout the academic career.
   public let awards: [AwardsContent]?
 
   public let columns: [ListColumnContent]
 
   public let footer: FooterContent
 
+  /// Creates an extended résumé pre-populated with content, using `options` for contact details.
+  /// - Parameter options: Contact information rendered in the footer.
   public init(_ options: ResumeOptions) {
     title = "Victor Puga - Extended CV"
 

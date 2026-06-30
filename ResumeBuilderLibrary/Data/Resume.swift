@@ -7,6 +7,10 @@
 
 import Foundation
 
+/// A concise, single-page résumé.
+///
+/// `Resume` omits academic projects and awards to keep the document to one page.
+/// Use ``ExtendedResume`` when you need a more detailed multi-page version.
 public struct Resume: DocumentStructure {
 
   public let title: String
@@ -15,14 +19,18 @@ public struct Resume: DocumentStructure {
 
   public let education: [EducationContent]
 
+  /// Always `nil` for `Resume`; use ``ExtendedResume`` to include this section.
   public let academicExperience: [ExperienceContent]?
-  
+
+  /// Always `nil` for `Resume`; use ``ExtendedResume`` to include this section.
   public let awards: [AwardsContent]?
 
   public let columns: [ListColumnContent]
 
   public let footer: FooterContent
 
+  /// Creates a résumé pre-populated with content, using `options` for contact details.
+  /// - Parameter options: Contact information rendered in the footer.
   public init(_ options: ResumeOptions) {
     title = "Victor Puga - CV"
 
